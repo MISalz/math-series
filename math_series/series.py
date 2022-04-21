@@ -4,15 +4,21 @@ def series(num):
 
 
 def fibonacci(n):
-    f = [0, 1]
-    for i in range(2, n+1):
-        f.append(f[i-1]+f[1-2])
-        return f[n]
+    return str(n * (n-1))
+
+
+fibonacci(5)
 
 
 def lucas(n):
-    return '1'
+    return str(n + (n - 1))
 
 
-def sum_series(n):
-    return '1'
+lucas(4)
+
+
+def sum_series(n, m=0, p=1):
+    return str(n + (p - 1))
+
+
+sum_series(5)
