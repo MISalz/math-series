@@ -1,4 +1,4 @@
-from math_series.series import series, fibonacci
+from math_series.series import series, fibonacci, lucas, sum_series
 
 
 def test_math_series_one():
@@ -12,9 +12,26 @@ def test_math_series_one():
 
 def test_fibonacci():
     # what happened
-    actual = fibonacci(n)
+    actual = fibonacci(5)
     # what did you expect to happen
-    expected = '1'
+    expected = '20'
+    # does what happened match what you expected
+    assert actual == expected
+
+
+def test_lucas():
+    # what happened
+    actual = lucas(4)
+    # what did you expect to happen
+    expected = '7'
+    # does what happened match what you expected
+    assert actual == expected
+
+def test_sum_series():
+    # what happened
+    actual = sum_series(7)
+    # what did you expect to happen
+    expected = '7'
     # does what happened match what you expected
     assert actual == expected
 
