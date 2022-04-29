@@ -27,6 +27,7 @@ def test_lucas():
     # does what happened match what you expected
     assert actual == expected
 
+
 def test_sum_series():
     # what happened
     actual = sum_series(13)
